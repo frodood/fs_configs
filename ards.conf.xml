@@ -1,0 +1,24 @@
+
+<configuration name="ards.conf" description="ARDS">
+  <settings>
+    <param name="url" value="http://ardsliteservice.pickme.lk/DVP/API/1.0.0.0/ARDS/request"/>
+    <param name="register-url" value="http://ardsliteservice.pickme.lk/DVP/API/1.0.0.0/ARDS/requestserver"/>
+    <param name="xml_rpc" value="http://192.168.51.249:8080/api/ards_route"/>
+
+
+    <param name="security_token" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmcm9kb29kIiwianRpIjoiMDIxYzQ4MWEtNTUxMC00MzlkLTk1YjgtZWY5OTY3MmY1ZmFhIiwic3ViIjoiNTZhOWU3NTlmYjA3MTkwN2EwMDAwMDAxMjVkOWU4MGI1YzdjNGY5ODQ2NmY5MjExNzk2ZWJmNDMiLCJleHAiOjIzMzQxMjMzNjAsInRlbmFudCI6LTEsImNvbXBhbnkiOi0xLCJzY29wZSI6W3sicmVzb3VyY2UiOiJhbGwiLCJhY3Rpb25zIjoiYWxsIn1dLCJpYXQiOjE0NzAyMDk3NjB9.Wh-E2OVg6nwsicj9yQdx92js6rPg6pzkZkmwk69FHmc"/>
+
+    <param name="profile-url" value="http://queuemusic.pickme.lk/DVP/API/1.0.0/QueueMusic/plain/Profile"/>
+    <param name="upload-url" value="http://fileservice.pickme.lk/DVP/API/1.0.0.0/InternalFileService/File/Upload"/>
+
+    <param name="download-url" value="http://fileservice.pickme.lk/DVP/API/1.0.0.0/InternalFileService/File/DownloadLatest"/>
+
+<!--   <param name="recording-url" value="http://fileservice.pickme.lk/DVP/API/1.0.0.0/InternalFileService/File/Upload"/>-->
+
+   <param name="notification_url" value="http://notificationservice.pickme.lk/DVP/API/1.0.0.0/NotificationService/Notification/initiate"/>
+
+<!--   <param name="record-format" value="$${base_dir}/recordings/sales/${strftime(%Y-%m-%d-%H-%M-%S)}.${destination_number}.${caller_id_number}.${uuid}.wav"/>-->
+<param name="record-format" value="/usr/src/recordings/sales/${uuid}.mp3"/>
+    <!--param name="dbname" value="/dev/shm/callcenter.db"/-->
+  </settings>
+</configuration>
