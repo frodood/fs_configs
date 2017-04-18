@@ -14,7 +14,7 @@
     <key name="11" value="sofia profile internal siptrace off"/>
     <key name="12" value="version"/>
   </cli-keybindings> 
-  
+<param name="core-db-dsn" value="odbc://freeswitch:duo:DuoS123"/>  
   <default-ptimes>
     <!-- Set this to override the 20ms assumption of various codecs in the sdp with no ptime defined -->
     <!-- <codec name="G729" ptime="40"/> -->
@@ -122,7 +122,8 @@
     -->    
 
     <param name="mailer-app" value="sendmail"/>
-    <param name="mailer-app-args" value="-t"/>
+<!--    <param name="mailer-app-args" value="-t"/>-->
+   <param name="mailer-app-args" value="-f voicemail@veery.cloud"/>
     <param name="dump-cores" value="yes"/>
 
     <!-- Enable verbose channel events to include every detail about a channel on every event  -->

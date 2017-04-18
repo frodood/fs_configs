@@ -20,7 +20,7 @@
       <node type="allow" cidr="192.168.42.42/32"/>
     </list>
     <list name="eventsocket" default="allow">
-    	 <node type="deny" host="4.3.2.0" mask="255.255.254.0"/>
+    	 <node type="deny" host="4.3.2.0" mask="255.255.255.0"/>
    </list>
     <!--
 	This will traverse the directory adding all users 

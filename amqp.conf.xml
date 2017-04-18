@@ -3,21 +3,21 @@
     <profile name="default">
       <connections>
 	<connection name="primary">
-	  <param name="hostname" value="localhost"/>
+	  <param name="hostname" value="192.168.4.2"/>
 	  <param name="virtualhost" value="/"/>
-	  <param name="username" value="guest"/>
-	  <param name="password" value="guest"/>
-	  <param name="port" value="5673"/>
+	  <param name="username" value="admin"/>
+	  <param name="password" value="DuoS123"/>
+	  <param name="port" value="5672"/>
 	  <param name="heartbeat" value="0"/>
 	</connection>
-	<connection name="secondary">
+	<!--<connection name="secondary">
 	  <param name="hostname" value="localhost"/>
 	  <param name="virtualhost" value="/"/>
 	  <param name="username" value="guest"/>
 	  <param name="password" value="guest"/>
 	  <param name="port" value="5672"/>
 	  <param name="heartbeat" value="0"/>
-	</connection>
+	</connection>-->
       </connections>
       <params>
 	<param name="exchange-name" value="TAP.Events"/>
@@ -45,10 +45,10 @@
     <profile name="default">
       <connections>
 	<connection name="primary">
-	  <param name="hostname" value="localhost"/>
+	  <param name="hostname" value="192.168.4.2"/>
 	  <param name="virtualhost" value="/"/>
-	  <param name="username" value="guest"/>
-	  <param name="password" value="guest"/>
+	  <param name="username" value="admin"/>
+	  <param name="password" value="DuoS123"/>
 	  <param name="port" value="5672"/>
 	  <param name="heartbeat" value="0"/>
 	</connection>
@@ -64,10 +64,10 @@
     <profile name="default">
       <connections>
 	<connection name="primary">
-	  <param name="hostname" value="localhost"/>
+	  <param name="hostname" value="192.168.4.2"/>
 	  <param name="virtualhost" value="/"/>
-	  <param name="username" value="guest"/>
-	  <param name="password" value="guest"/>
+	  <param name="username" value="admin"/>
+	  <param name="password" value="DuoS123"/>
 	  <param name="port" value="5672"/>
 	  <param name="heartbeat" value="0"/>
 	</connection>

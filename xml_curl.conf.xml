@@ -2,11 +2,11 @@
   <bindings>
 
 <binding name="directory"> <param name="gateway-url" 
-value="http://dynamicconfigurationgenerator.pickme.lk/DVP/API/1.0.0.0/DynamicConfigGenerator/DirectoryProfile" binding="directory"/>
+value="http://dynamicconfigurationgenerator.poc.lk/DVP/API/1.0.0.0/DynamicConfigGenerator/DirectoryProfile" binding="directory"/>
 </binding>
 
 <binding name="callapp"> <param name="gateway-url" 
-value="http://dynamicconfigurationgenerator.pickme.lk/DVP/API/1.0.0.0/DynamicConfigGenerator/CallApp" binding="dialplan"/>
+value="http://dynamicconfigurationgenerator.poc.lk/DVP/API/1.0.0.0/DynamicConfigGenerator/CallApp" binding="dialplan"/>
 </binding>
    <!-- <binding name="example">-->
       <!-- Allow to bind on a particular IP for requests sent -->

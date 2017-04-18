@@ -21,7 +21,7 @@
     <!-- <load module="mod_xml_scgi"/> -->
     <load module="mod_json_cdr"/>
     <!-- Event Handlers -->
-    <!-- <load module="mod_amqp"/> -->
+    <load module="mod_amqp"/>
     <load module="mod_cdr_csv"/>
     <!-- <load module="mod_cdr_sqlite"/> -->
     <!-- <load module="mod_event_multicast"/> -->
@@ -106,7 +106,7 @@
     <load module="mod_png"/>
     <!-- <load module="mod_shell_stream"/> -->
     <!--For icecast/mp3 streams/files-->
-    <!--<load module="mod_shout"/>-->
+    <load module="mod_shout"/>
     <!--For local streams (play all the files in a directory)-->
     <load module="mod_local_stream"/>
     <load module="mod_tone_stream"/>

@@ -3,9 +3,9 @@
     <!-- print xml on the console -->
     <param name="debug" value="true"/>
     <!-- time to keep audio files when discovered they were deleted from the http server -->
-    <param name="file-not-found-expires" value="300"/>
+    <param name="file-not-found-expires" value="3600"/>
     <!-- how often to re-check the server to make sure the remote file has not changed -->
-    <param name="file-cache-ttl" value="300"/>
+    <param name="file-cache-ttl" value="3600"/>
   </settings>
   <profiles>
     <profile name="default">
@@ -26,40 +26,31 @@
 	<!-- <permission name="all" value="true"/> -->
 	<!--<permission name="none" value="true"/> -->
 	<permission name="set-params" value="true"/>
-	<permission name="set-vars" value="true">
-	  <!-- default to "deny" or "allow" -->
-	  <!-- type attr can be "deny" or "allow" nothing defaults to opposite of the list default so allow in this case -->
-	  <!-- 
-	  <variable-list default="deny">
-	    <variable name="caller_id_name"/>
-	    <variable name="hangup"/> 
-	  </variable-list>
-	  -->
+	<permission name="set-vars" value="true"/>
+	<permission name="execute-apps" value="true">
+		<application-list default="deny">
+			<!-- type attr can be "deny" or "allow" nothing defaults to opposite of the list default so allow in this case -->
+			<application name="info"/>
+			<application name="hangup"/>
+			<application name="play_and_get_digits"/>
+			<application name="execute"/>
+			<application name="ards"/>
+			<application name="wait_for_answer"/>
+			<application name="phrase"/>
+		</application-list>
 	</permission>
 	<permission name="get-vars" value="true">
 	  <!-- default to "deny" or "allow" -->
 	  <!-- type attr can be "deny" or "allow" nothing defaults to opposite of the list default so allow in this case -->
 	  
-	  <variable-list default="deny">
+<!--	  <variable-list default="deny">
 	    <variable name="caller_id_name"/>
 	    <variable name="hangup"/> 
 	    <variable name="result"/>
 	  </variable-list>
-	  
+-->	  
 	</permission>
 	<permission name="extended-data" value="false"/>
-	<permission name="execute-apps" value="true">
-	  <!-- default to "deny" or "allow" -->
-	  <application-list default="deny">
-	    <!-- type attr can be "deny" or "allow" nothing defaults to opposite of the list default so allow in this case -->
-	    <application name="info"/>
-	    <application name="hangup"/>
-	    <application name="play_and_get_digits"/>
-	    <application name="execute"/> 
-            <application name="ards"/>
-           </application-list>
-
-	</permission>
 	<permission name="expand-vars-in-tag-body" value="false">
 	  <!-- default to "deny" or "allow" -->
 	  <!-- type attr can be "deny" or "allow" nothing defaults to opposite of the list default so allow in this case -->
