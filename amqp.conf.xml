@@ -3,14 +3,14 @@
     <profile name="default">
       <connections>
 	<connection name="primary">
-	  <param name="hostname" value="192.168.4.2"/>
+	  <param name="hostname" value="10.128.0.2"/>
 	  <param name="virtualhost" value="/"/>
-	  <param name="username" value="admin"/>
+	  <param name="username" value="duo"/>
 	  <param name="password" value="DuoS123"/>
 	  <param name="port" value="5672"/>
 	  <param name="heartbeat" value="0"/>
 	</connection>
-	<!--<connection name="secondary">
+<!--	<connection name="secondary">
 	  <param name="hostname" value="localhost"/>
 	  <param name="virtualhost" value="/"/>
 	  <param name="username" value="guest"/>
@@ -36,8 +36,8 @@
 	-->
 	<!-- <param name="format_fields" value="#FreeSWITCH,FreeSWITCH-Hostname|#Unknown,Event-Name,Event-Subclass,Unique-ID"/> -->
 
-	<!--    <param name="event_filter" value="SWITCH_EVENT_ALL"/> -->
-	<param name="event_filter" value="SWITCH_EVENT_CHANNEL_CREATE,SWITCH_EVENT_CHANNEL_DESTROY,SWITCH_EVENT_HEARTBEAT,SWITCH_EVENT_DTMF"/>
+	    <param name="event_filter" value="SWITCH_EVENT_ALL"/> 
+<!--	<param name="event_filter" value="SWITCH_EVENT_CHANNEL_CREATE,SWITCH_EVENT_CHANNEL_DESTROY,SWITCH_EVENT_HEARTBEAT,SWITCH_EVENT_DTMF"/>-->
       </params>
     </profile>
   </producers>
@@ -45,9 +45,9 @@
     <profile name="default">
       <connections>
 	<connection name="primary">
-	  <param name="hostname" value="192.168.4.2"/>
+	  <param name="hostname" value="10.128.0.2"/>
 	  <param name="virtualhost" value="/"/>
-	  <param name="username" value="admin"/>
+	  <param name="username" value="duo"/>
 	  <param name="password" value="DuoS123"/>
 	  <param name="port" value="5672"/>
 	  <param name="heartbeat" value="0"/>
@@ -64,9 +64,9 @@
     <profile name="default">
       <connections>
 	<connection name="primary">
-	  <param name="hostname" value="192.168.4.2"/>
+	  <param name="hostname" value="10.128.0.2"/>
 	  <param name="virtualhost" value="/"/>
-	  <param name="username" value="admin"/>
+	  <param name="username" value="duo"/>
 	  <param name="password" value="DuoS123"/>
 	  <param name="port" value="5672"/>
 	  <param name="heartbeat" value="0"/>
