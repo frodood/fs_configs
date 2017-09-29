@@ -8,7 +8,7 @@
 
     <param name="security_token" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmcm9kb29kIiwianRpIjoiMDIxYzQ4MWEtNTUxMC00MzlkLTk1YjgtZWY5OTY3MmY1ZmFhIiwic3ViIjoiNTZhOWU3NTlmYjA3MTkwN2EwMDAwMDAxMjVkOWU4MGI1YzdjNGY5ODQ2NmY5MjExNzk2ZWJmNDMiLCJleHAiOjIzMzQxMjMzNjAsInRlbmFudCI6LTEsImNvbXBhbnkiOi0xLCJzY29wZSI6W3sicmVzb3VyY2UiOiJhbGwiLCJhY3Rpb25zIjoiYWxsIn1dLCJpYXQiOjE0NzAyMDk3NjB9.Wh-E2OVg6nwsicj9yQdx92js6rPg6pzkZkmwk69FHmc"/>
 
-    <param name="profile-url" value="http://queuemusic.poc.lk/DVP/API/1.0.0/QueueMusic/plain/Profile"/>
+    <param name="profile-url" value="http://queuemusic.poc.lk/DVP/API/1.0.0/QueueMusic"/>
     <param name="upload-url" value="http://fileservice.poc.lk/DVP/API/1.0.0.0/InternalFileService/File/Upload"/>
 
     <param name="download-url" value="http://fileservice.poc.lk/DVP/API/1.0.0.0/InternalFileService/File/DownloadLatest"/>
